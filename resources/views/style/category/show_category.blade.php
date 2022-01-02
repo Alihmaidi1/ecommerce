@@ -1,0 +1,172 @@
+@include("style.layout.header")
+
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        @include('style.layout.navbar')
+
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Section 1 ======-->
+            <div class="u-s-p-y-60">
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb__wrap">
+                                <ul class="breadcrumb__list">
+                                    <li class="has-separator">
+
+                                        <a href="{{ route("show_style_user") }}">Home</a></li>
+                                    <li class="is-marked">
+
+                                        <a href="{{ route("show_style_user") }}">Category</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Section 1 ======-->
+
+
+            <!--====== Section 2 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Section Intro ======-->
+                <div class="section__intro u-s-m-b-60">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__text-wrap">
+                                    <h1 class="section__heading u-c-secondary">All Category</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Intro ======-->
+
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col-lg-12 col-md-12 col-sm-12">
+
+                                <!--====== Wishlist Product ======-->
+                                <div class="w-r u-s-m-b-30 ">
+                                    <div class="w-r__container">
+                                        <div class="w-r__wrap-1">
+                                            <div class="w-r__img-wrap">
+
+                                                <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt=""></div>
+                                            <div class="w-r__info">
+
+                                                <span class="w-r__name">
+
+                                                    <a href="product-detail.html">Yellow Wireless Headphone</a></span>
+
+
+</div>
+                                        </div>
+                                        <div class="w-r__wrap-2">
+
+
+                                            <a class="w-r__link btn--e-transparent-platinum-b-2" href="product-detail.html">VIEW</a>
+
+                                    </div>
+                                </div>
+                                <!--====== End - Wishlist Product ======-->
+
+
+                                <!--====== Wishlist Product ======-->
+                                <div class="w-r u-s-m-b-30">
+                                    <div class="w-r__container">
+                                        <div class="w-r__wrap-1">
+                                            <div class="w-r__img-wrap">
+
+                                                <img class="u-img-fluid" src="images/product/women/product8.jpg" alt=""></div>
+                                            <div class="w-r__info">
+
+                                                <span class="w-r__name">
+
+                                                    <a href="product-detail.html">New Dress D Nice Elegant</a></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-r__wrap-2">
+
+
+                                            <a class="w-r__link btn--e-transparent-platinum-b-2" href="product-detail.html">VIEW</a>
+
+                                    </div>
+                                </div>
+                                <!--====== End - Wishlist Product ======-->
+
+
+                                <!--====== Wishlist Product ======-->
+                                <div class="w-r u-s-m-b-30">
+                                    <div class="w-r__container">
+                                        <div class="w-r__wrap-1">
+                                            <div class="w-r__img-wrap">
+
+                                                <img class="u-img-fluid" src="images/product/men/product8.jpg" alt=""></div>
+                                            <div class="w-r__info">
+
+                                                <span class="w-r__name">
+
+                                                    <a href="product-detail.html">New Fashion D Nice Elegant</a></span>
+
+                                         
+                                                </div>
+                                        </div>
+                                        <div class="w-r__wrap-2">
+
+
+                                            <a class="w-r__link btn--e-transparent-platinum-b-2" href="product-detail.html">VIEW</a>
+
+                                    </div>
+                                </div>
+                                <!--====== End - Wishlist Product ======-->
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--====== End - Section 2 ======-->
+        </div>
+        <!--====== End - App Content ======-->
+
+
+        <!--====== Main Footer ======-->
+        
+    </div>
+    <!--====== End - Main App ======-->
+    @section('js')
+    <script src={{ asset("site/js1/map-init.js") }}></script> 
+
+    <!--====== Vendor Js ======-->
+    <script src="{{ asset("site/js1/vendor.js") }}"></script>
+  
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="{{ asset("site/js1/jquery.shopnav.js") }}"></script>
+  
+    <!--====== App ======-->
+    <script src="{{ asset('site/js1/app.js') }}"></script>
+  
+    @endsection
+
+    @include('style.layout.footer')
+  
